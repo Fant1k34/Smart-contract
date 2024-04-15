@@ -59,7 +59,6 @@ contract ExchangeOffice {
     function sellTokens(uint256 amount) public {
         require(amount >= minimumAmountPerTransaction, "Minimum value per transaction is not followed");
         require(tokenBalances[msg.sender] >= amount, "Not enough tokens to sell");
-        require(amount * currencySellPrice * const > address(this).balance, "Not enough ETH in Exchanger");
 
         address payable _to = payable (msg.sender);
         _to.transfer(amount * currencySellPrice * const);

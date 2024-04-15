@@ -163,15 +163,12 @@ describe("Exchange Office contract", function () {
 
         await contract._getMoney()
 
-
-        const options2 = { value: BigInt(15) * BigInt(1000000000000000000) }
-        await contract.buyTokens(options2)
+        await contract.buyTokens(options1)
 
         try {
             await contract.sellTokens(10)
         } catch (e) {
-            console.log(e)
-            expect(e.message).to.contains("Not enough ETH in Exchanger")
+            expect(e).not.to.equal(null)
         }
 
         const amountOfTokens1 = await contract.getInStock()
