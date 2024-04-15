@@ -99,6 +99,8 @@ ExchangeOffice is a smart contract deployed on the Ethereum blockchain. It serve
 ## Deployed contract
 
 - Contract is deployed to Sepolia test network with address:
-
+  - 0x02604345B212Cc0e5a7e3Ad9A0BF76Dd2E72060D
+  - Verify: https://sepolia.etherscan.io/address/0x02604345B212Cc0e5a7e3Ad9A0BF76Dd2E72060D#code
 - Proof of work 
   - ![img_1.png](img_1.png)
+  - ![img_2.png](img_2.png)
